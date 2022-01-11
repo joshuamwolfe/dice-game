@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Dice from "./Dice";
 
 function App() {
   return (
     <div className="App">
-      <Dice />
+      <Dice numDice={4} maxVal={6} />
     </div>
   );
 }
