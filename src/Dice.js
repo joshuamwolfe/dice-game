@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Die from "./Die";
 
 const Dice = ({ numDice = 6, title = "Main Game", maxVal = 20 }) => {
   const [numbers, setNumbers] = useState(Array.from({ length: numDice }));
@@ -14,7 +15,7 @@ const Dice = ({ numDice = 6, title = "Main Game", maxVal = 20 }) => {
   return (
     <div>
       {numbers.map((num) => (
-        <div>{num}</div>
+        <Die val={num} />
       ))}
       <button onClick={rollDice}>Roll</button>
     </div>
