@@ -4,7 +4,8 @@ import Dice from "./Dice";
 function App() {
   return (
     <div className="App">
-      <Dice numDice={4} maxVal={6} />
+      <Dice title={"Roll Me!"} numDice={4} maxVal={6} />
+      <Dice />
     </div>
   );
 }
