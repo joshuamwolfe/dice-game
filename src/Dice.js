@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Die from "./Die";
-
+import "./Die.css";
 const Dice = ({ numDice = 6, title = "Main Game", maxVal = 20 }) => {
   const [numbers, setNumbers] = useState(Array.from({ length: numDice }));
   const rollDice = () =>
